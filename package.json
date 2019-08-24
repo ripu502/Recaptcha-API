@@ -1,0 +1,26 @@
+{
+  "name": "recapchaapi",
+  "version": "1.0.0",
+  "description": "this is only for small test perpuse",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ripu502/recapchaAPI.git"
+  },
+  "author": "Ripudaman Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ripu502/recapchaAPI/issues"
+  },
+  "homepage": "https://github.com/ripu502/recapchaAPI#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

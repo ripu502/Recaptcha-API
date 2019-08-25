@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ripu502/recapchaAPI#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "request": "^2.88.0"
   },

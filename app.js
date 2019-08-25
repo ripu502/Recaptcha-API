@@ -1,13 +1,23 @@
 const express = require('express');
 const app = express();
+const cors = require('cors'); ``
 const request = require('request');
 const keys = require('./keys');
+
+app.use(cors())
+
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,POST');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+})
 
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use('/register', (req, res, next) => {
+app.post('/register', (req, res, next) => {
     const username = req.body.username;
     if (req.body['g-recaptcha-response'] === undefined ||
         req.body['g-recaptcha-response'] === '' ||
@@ -35,6 +45,6 @@ app.use('/register', (req, res, next) => {
 
 })
 
-app.listen(3000, () => {
-    console.log(`http://localhost:3000`);
+app.listen(4000, () => {
+    console.log(`http://localhost:4000`);
 })

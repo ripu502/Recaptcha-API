@@ -1,2 +1,2 @@
-# recapchaAPI
-this is only for small test perpuse
+# Recaptcha-API
+Testing the Recaptcha in Rest-API.
